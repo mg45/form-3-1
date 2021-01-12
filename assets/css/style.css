@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*
+    font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+div > h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+section {
+    margin: 10% 0 10% 33%;
+}
+
+section > div:nth-of-type(1) {
+    background-color: #377dff;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #e7eaf3;
+    border-bottom: none;
+    padding: 20px;
+    width: 480px;
+}
+
+section > div:nth-of-type(2) {
+    border: 1px solid #e7eaf3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+    width: 480px;
+}
+
+label {
+    display: inline-block;
+    margin: 6px 0px;
+}
+
+form>div {
+    padding: 20px 40px 20px 20px;
+    width: 420px;
+    border-radius: 5px;
+    border: 1px solid #e7eaf3;
+}
+
+input[type=text], [type=email], [type=number], [type=password] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e7eaf3;
+    border-radius: 4px;
+    line-height: 1.6rem;
+}
+
+input[type=text]:focus, [type=email]:focus, [type=number]:focus, [type=password]:focus {
+    outline: 0;
+    border-color: rgba(55, 125, 255, .4);
+}
+
+input[type=submit] {
+    border: 1px solid #377dff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    background-color: rgba(55,125,255,.1);
+    color: #377dff;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 21%;
+    padding: 10px 20px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #377dff;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+span.blue-round {
+    margin-left: -40px;
+    background: #377dff;
+    border-radius: 0.8em;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+}
+
+form>label {
+    position: relative;
+    user-select: none;
+    margin: 10px;
+}
+
+form>label::before {
+    border-radius: .25rem;
+    content: '';
+    display: block;
+    border: 1px solid #e7eaf3;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    cursor: pointer;
+    
+}
+
+input[type="checkbox"]:checked+label::before {
+    background:url("../img/tick-sign.svg") no-repeat;
+    height: 14px;
+    width: 14px;
+    background-size: 100%;
+}
